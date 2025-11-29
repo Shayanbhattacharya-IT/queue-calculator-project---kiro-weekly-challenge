@@ -1,0 +1,153 @@
+.queue-manager {
+  background: white;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 24px;
+}
+
+.queue-manager h3 {
+  margin: 0 0 16px 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.queue-manager-loading {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+}
+
+.notification-prompt {
+  background: #fff3cd;
+  border: 1px solid #ffc107;
+  border-radius: 4px;
+  padding: 12px;
+  margin-bottom: 16px;
+}
+
+.notification-prompt p {
+  margin: 0 0 8px 0;
+  color: #856404;
+}
+
+.notification-prompt button {
+  padding: 8px 16px;
+  background-color: #ffc107;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.queue-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.queue-card {
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  padding: 16px;
+  transition: all 0.3s;
+}
+
+.queue-card.urgent {
+  border-color: #dc3545;
+  background-color: #fff5f5;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(220, 53, 69, 0.4); }
+  50% { box-shadow: 0 0 0 10px rgba(220, 53, 69, 0); }
+}
+
+.queue-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.queue-header h4 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.queue-position {
+  background-color: #007bff;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.location-info {
+  color: #666;
+  font-size: 14px;
+  margin: 0 0 12px 0;
+}
+
+.time-info {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.time-remaining {
+  font-size: 14px;
+  color: #333;
+}
+
+.time-remaining strong {
+  font-size: 24px;
+  color: #007bff;
+}
+
+.time-elapsed {
+  font-size: 14px;
+  color: #999;
+}
+
+.alert-message {
+  background-color: #fff3cd;
+  border-left: 4px solid #ffc107;
+  padding: 8px 12px;
+  margin: 12px 0;
+  font-size: 14px;
+  color: #856404;
+  font-weight: 500;
+}
+
+.complete-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.complete-button:hover {
+  background-color: #218838;
+}
+
+@media (max-width: 768px) {
+  .queue-manager {
+    padding: 16px;
+  }
+  
+  .time-info {
+    flex-direction: column;
+    gap: 8px;
+  }
+}

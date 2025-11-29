@@ -1,0 +1,163 @@
+.dashboard {
+  width: 100%;
+}
+
+.dashboard-loading,
+.dashboard-error,
+.dashboard-empty {
+  text-align: center;
+  padding: 40px 20px;
+  color: #666;
+}
+
+.dashboard-error button {
+  margin-top: 16px;
+  padding: 8px 24px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.dashboard-error button:hover {
+  background-color: #0056b3;
+}
+
+.locations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.location-card {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s;
+}
+
+.location-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.location-header {
+  margin-bottom: 16px;
+}
+
+.location-header h3 {
+  margin: 0 0 8px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.location-category {
+  display: inline-block;
+  padding: 4px 12px;
+  background-color: #f0f0f0;
+  border-radius: 12px;
+  font-size: 12px;
+  color: #666;
+}
+
+.wait-time {
+  text-align: center;
+  padding: 24px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.wait-time .time-value {
+  font-size: 48px;
+  font-weight: bold;
+  display: block;
+}
+
+.wait-time .time-unit {
+  font-size: 16px;
+  color: #666;
+}
+
+.wait-time .no-data {
+  font-size: 16px;
+  color: #999;
+}
+
+.severity-short {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.severity-moderate {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.severity-long {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.severity-unknown {
+  background-color: #f5f5f5;
+  color: #999;
+}
+
+.location-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  color: #666;
+}
+
+.report-count {
+  font-weight: 500;
+}
+
+.confidence {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.confidence-high {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.confidence-medium {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.confidence-low {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.confidence-none {
+  background-color: #f5f5f5;
+  color: #999;
+}
+
+.queue-info {
+  margin-top: 12px;
+  padding: 8px 12px;
+  background-color: #e7f3ff;
+  border-left: 3px solid #007bff;
+  border-radius: 4px;
+  font-size: 13px;
+  color: #004085;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .locations-grid {
+    grid-template-columns: 1fr;
+  }
+}
