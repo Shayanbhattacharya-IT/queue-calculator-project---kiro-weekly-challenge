@@ -1,5 +1,3 @@
-<img width="1917" height="1151" alt="Screenshot 2025-11-29 125950" src="https://github.com/user-attachments/assets/f6e7c766-7507-40f4-bd53-a505f3c79785" /><img width="1919" height="1150" alt="Screenshot 2025-11-29 125932" src="https://github.com/user-attachments/assets/8be2d48b-a198-4543-828a-0cc9cb9b6219" /># Quick Queue
-
 A crowd-sourced line wait time estimator that helps people avoid wasting time in long queues at banks, restaurants, and events.
 
 ## 🚀 Quick Start
@@ -22,7 +20,9 @@ App runs on http://localhost:3000
 
 <img width="1919" height="1199" alt="Screenshot 2025-11-29 130402" src="https://github.com/user-attachments/assets/3ba727a7-e025-4e92-b7dd-5bcad20a1769" />
 
+<img width="1917" height="1151" alt="Screenshot 2025-11-29 125950" src="https://github.com/user-attachments/assets/f6e7c766-7507-40f4-bd53-a505f3c79785" />
 
+<img width="1919" height="1150" alt="Screenshot 2025-11-29 125932" src="https://github.com/user-attachments/assets/8be2d48b-a198-4543-828a-0cc9cb9b6219" /># Quick Queue
 
 ## ✨ Features
 
